@@ -2,3 +2,4 @@
 # kiến thức để làm được.
 - HTML CSS.
 - Responsive.
+- Một chút javascript
