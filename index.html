@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="shortcut icon" href="./assets/img/favicon/faviiconLogo.png" type="image/x-icon">
 </head>
@@ -19,7 +20,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -35,6 +36,10 @@
             <!-- Begin: Serach button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!-- End: Serach button -->
         </div>
@@ -231,5 +236,34 @@
             event.stopPropagation()
         })
     </script>
+
+<script>
+    var header = document.getElementById('header')
+    var moblileMenu = document.getElementById('mobile-menu')
+    var headerHeight = header.clientHeight
+
+    // Đóng mở mobile menu
+    moblileMenu.onclick = function() {
+        var isClosed = header.clientHeight === headerHeight
+
+        if (isClosed) {
+            header.style.height = 'auto'
+        } else {
+            header.style.height = null
+        }
+    }
+
+    // Tự động đóng khi chọn menu
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+
+    for (var i = 0; i < menuItems.length; i++) {
+        var menuItem = menuItems[i]
+
+        menuItem.onclick = function() {
+            header.style.height = null
+        }
+    }
+
+</script>
 </body>
 </html>
