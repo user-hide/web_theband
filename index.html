@@ -33,15 +33,15 @@
             </ul>
             <!-- End: Nav -->
 
-            <!-- Begin: Serach button -->
-            <div class="search-btn">
-                <i class="search-icon ti-search"></i>
-            </div>
-
+            <!-- Mobile menu button -->
             <div id="mobile-menu" class="mobile-menu-btn">
                 <i class="menu-icon ti-menu"></i>
             </div>
-            <!-- End: Serach button -->
+
+            <!-- Search btn -->
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
         </div>
 
         <div id="slider">
@@ -60,15 +60,15 @@
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="row member-list">
-                    <div class="col col-third text-center">
+                    <div class="col col-third s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.png" alt="Name" class="member-img">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="col col-third s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.png" alt="Name" class="member-img">
                     </div>
-                    <div class="col col-third text-center">
+                    <div class="col col-third s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.png" alt="Name" class="member-img">
                     </div>
@@ -90,31 +90,31 @@
 
                     <!-- Places -->
                     <div class="row places-list">
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/place1.png" alt="New York" class="places-img">
                             <div class="places-body">
                                 <h3 class="places-heading">New York</h3>
                                 <p class="places-time">Fri 27 Nov 2016</p>
                                 <p class="places-dsec">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn s-full-width js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/place2.png" alt="New York" class="places-img">
                             <div class="places-body">
                                 <h3 class="places-heading">Paris</h3>
                                 <p class="places-time">Sat 28 Nov 2016</p>
                                 <p class="places-dsec">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn s-full-width js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/place3.png" alt="New York" class="places-img">
                             <div class="places-body">
                                 <h3 class="places-heading">San Francisco</h3>
                                 <p class="places-time">Sun 29 Nov 2016</p>
                                 <p class="places-dsec">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn s-full-width js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -127,18 +127,18 @@
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
                 <div class="row contact-content">
-                    <div class="col col-half contact-info">
+                    <div class="col col-half s-col-full contact-info">
                         <p><i class="ti-location-pin"></i>Chicago, US</p>
-                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
-                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                        <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
                     </div>
-                    <div class="col col-half contact-form">
+                    <div class="col col-half s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full">
                                     <input type="text" name="" placeholder="Name" required id="" class="form-control">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="email" name="" placeholder="Email" required id="" class="form-control">
                                 </div>
                             </div>
@@ -147,7 +147,7 @@
                                     <input type="text" name="" placeholder="Message" required id="" class="form-control">
                                 </div>
                             </div>
-                            <input class="btn pull-right mt-16" type="Submit" value="SEND">  
+                            <input class="btn pull-right mt-16 s-full-width" type="Submit" value="SEND">  
                         </form>
                     </div>
                 </div>
@@ -237,33 +237,40 @@
         })
     </script>
 
-<script>
-    var header = document.getElementById('header')
-    var moblileMenu = document.getElementById('mobile-menu')
-    var headerHeight = header.clientHeight
+    <!-- Mobile menu -->
+    <script>
+        var header = document.getElementById('header')
+        var moblileMenu = document.getElementById('mobile-menu')
+        var headerHeight = header.clientHeight
 
-    // Đóng mở mobile menu
-    moblileMenu.onclick = function() {
-        var isClosed = header.clientHeight === headerHeight
+        // Đóng mở mobile menu
+        moblileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight
 
-        if (isClosed) {
-            header.style.height = 'auto'
-        } else {
-            header.style.height = null
+            if (isClosed) {
+                header.style.height = 'auto'
+            } else {
+                header.style.height = null
+            }
         }
-    }
 
-    // Tự động đóng khi chọn menu
-    var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        // Tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
 
-    for (var i = 0; i < menuItems.length; i++) {
-        var menuItem = menuItems[i]
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i]
+            
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
 
-        menuItem.onclick = function() {
-            header.style.height = null
+                if (isParentMenu) {
+                    event.preventDefault()
+                } else {
+                    header.style.height = null
+                }
+            }
         }
-    }
 
-</script>
+    </script>
 </body>
 </html>

@@ -80,8 +80,8 @@ html {
     margin-top: 16px !important;
 }
 
-#app {
-
+.mt-32 {
+    margin-top: 32px !important;
 }
 
 #header {
@@ -92,7 +92,6 @@ html {
     right: 0;
     left: 0;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav {
@@ -151,6 +150,13 @@ html {
 
 #nav .nav-arrow-down {
     font-size: 14px;
+}
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 #header .mobile-menu-btn,
@@ -240,7 +246,7 @@ html {
 }
 
 #content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .member-name {
@@ -292,7 +298,7 @@ html {
 
 /* Places */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .places-img {
@@ -338,6 +344,15 @@ html {
 .contact-info i[class*="ti-"] {
     width: 30px;
     display: inline-block;
+}
+
+.contact-info a {
+    color: #101acf;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-form {
