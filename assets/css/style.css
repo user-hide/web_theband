@@ -31,6 +31,8 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -189,7 +191,7 @@ html {
     position: relative;
     margin-top: 46.4px;
     padding-top: 50%;
-    background: url('/assets/img/slider/slider1.png') no-repeat top center / cover;
+    background: url('../img/slider/slider1.png') no-repeat top center / cover;
 }
 
 #slider .text-content {
@@ -204,15 +206,13 @@ html {
 #slider .text-heading {
     font-weight: 500;
     font-size: 24px;
+    text-shadow: 0 0 1px #000;
 }
 
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
-}
-
-#content {
-
+    text-shadow: 0 0 1px #000;
 }
 
 #content .content-section {
