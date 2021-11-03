@@ -3,3 +3,6 @@
 - HTML CSS.
 - Responsive.
 - Một ít javascript
+
+# Để truy cập trang web: click vào link dưới đây
+https://user-hide.github.io/web_theband/
